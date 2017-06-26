@@ -1,0 +1,131 @@
+{
+  "greet": {
+    "examples": [
+      "야",
+      "철수야",
+      "안녕",
+      "안녕하세요",
+      "반가워"
+    ]
+  },
+
+  "notify": {
+    "examples": [
+      "<date>오늘 저녁</date> <text>대흥역 가야한다</text>고 알려줘",
+      "<date>내일</date> <text>숙제 있으니까</text> 알려줘",
+      "<date>내일 아침</date>에 알려줘"
+    ],
+    "entities": {
+      "date": ["오늘", "내일", "저녁", "오후"]
+    }
+  },
+
+  "weather": {
+    "examples": [
+      "<date>내일 저녁</date> 날씨",
+      "<date>내일 오전</date> 날씨",
+      "<date>내일</date> <location>서울</location> 날씨",
+      "<date>오늘</date> <location>울산</location> <date>오전</date> 날씨",
+      "<date>내일</date> 날씨 좀 물어봐도 되냐",
+      "야 <date>오늘</date> 날씨",
+      "날씨를 알고 싶어 <date>오늘</date>"
+    ],
+    "entities": {
+      "date": ["이번", "다음", "주말", "내일", "오늘", "모레", "오전", "아침", "오후", "다음주", "이번주"],
+      "location": ["서울", "광주", "대구", "부산", "울산", "창원", "거창"],
+      "_": ["알려주세요"]
+    }
+  },
+
+  "forecast": {
+    "examples": [
+      "<date>내일</date> <weather>비</weather> 올까?",
+      "<date>내일</date> <weather>바람</weather> 많이 부니?",
+      "<date>모레</date> <weather>눈</weather> 오니?",
+      "<date>주말</date>에 <weather>비</weather> 소식은?",
+      "<date>오늘 저녁</date>에 <weather>바람</weather> 많이 불어?",
+      "<date>이번주</date> <weather>눈</weather> 소식"
+    ],
+    "entities": {
+      "date": ["내일", "모레", "오늘", "주말", "다음주", "이번주"],
+      "weather": ["비", "눈", "황사"],
+      "_": ["불어"]
+    }
+  },
+
+  "path": {
+    "examples": [
+      "<from>울산</from>에서 <to>서울</to>까지 가는 길",
+      "<from>광주</from>에서 <to>부산</to> 가는 길",
+      "<from>대전</from>에서 <to>대구</to> 가는 길 알려줘",
+      "<to>대구</to>까지 가는 길",
+      "<to>대전</to> 가는 길",
+      "<to>인천</to> 가야해",
+      "<to>서울</to> 길 알려줘",
+      "<to>부산</to>까지 어떻게 갈까?",
+      "<to>서울역</to>까지 가는 길",
+      "<from>파리</from>에서 <to>서울역</to>까지"
+    ],
+    "entities": {
+      "from": ["서울", "대구", "부산", "울산", "창원", "거창", "서울역", "부산역"],
+      "to": ["서울", "대구", "부산", "울산", "창원", "거창", "서울역", "부산역"]
+    }
+  },
+
+  "metro": {
+    "examples": [
+      "<from>서울역</from>에서 <to>공덕역</to>까지",
+      "<from>대전역</from>에서 <to>동대구역</to>까지",
+      "<from>공덕역</from>에서 <to>울산역</to>까지"
+    ],
+    "entities": {
+      "from": ["서울역", "대전역", "대구역", "대흥역", "공덕역"],
+      "to": ["서울역", "대전역", "대구역", "대흥역", "공덕역"]
+    }
+  },
+
+  "pizza_order": {
+    "examples": [
+      "<menu>페퍼로니</menu> 피자 <count>한판</count> 배달해줘",
+      "<menu>치즈피자</menu> <count>하나</count> 만들어",
+      "야 <menu>치즈피자</menu> 만들어줘",
+      "피자 <count>하나</count> 주문",
+      "피자 주문",
+      "<menu>고구마피자</menu> <count>한판</count> <addr>서울시 마포구 합정동</addr>으로 배달",
+      "<addr>서울시 마포구 합정동</addr>으로 <menu>고구마피자</menu> 배달",
+      "<addr>대흥동 234 103호</addr>로 <menu>고구마피자</menu> 배달",
+      "<menu>불고기피자</menu> <count>한판</count>"
+    ],
+    "entities": {
+      "menu": ["페퍼로니", "치즈", "하와이안", "불고기", "고구마"],
+      "count": ["하나", "둘", "한판", "두판"],
+      "addr": ["서울", "마포"],
+      "_": ["피자", "로", "으로"]
+    }
+  },
+
+  "memo": {
+    "examples": [
+      "<text>내일 숙제 있어</text>라고 메모해줘",
+      "<text>내일 과제있다</text>고 메모해줘",
+      "<text>밥먹어라</text>고 메모해줘",
+      "메모해줘"
+    ]
+  },
+
+  "schedule": {
+    "examples": [
+      "<date>내일</date> 일정",
+      "<date>이번주</date> 할일",
+      "<date>내일</date> <time>오전</time> 할일",
+      "<date>오늘</date> <time>아침</time> 일정",
+      "<date>내일</date> <time>오후 1시</time> 일정",
+      "<date>오늘</date> <time>오후 1시 30분</time> 일정",
+      "<date>이번 주말</date> 일정"
+    ],
+    "entities": {
+      "date": ["내일", "모레", "오늘", "주말", "이번주"],
+      "time": ["오전", "오후", "아침", "저녁"]
+    }
+  }
+}
