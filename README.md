@@ -4,7 +4,7 @@
 # 환경
 
 - Python 3.6 이상
-- 사용되는 라이브러리는 `requirements`를 참고해주세요
+- 사용되는 라이브러리는 `requirements.txt`를 참고해주세요
 
 # 사용법
 

@@ -1,4 +1,4 @@
-from lib import koreantext
+from java import koreantext
 
 koreantext.init()
 tagger = koreantext.Tagger()
